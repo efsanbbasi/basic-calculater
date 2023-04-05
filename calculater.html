@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+    <link rel="stylesheet" href="./calculater.css">
+</head>
+<body>
+    <div class="section">
+        <div class="c-wrapper">
+            <div class="calculater-container">
+
+                <div class="a-item">
+                    <select class="a-item-01" name="calculater" id="calculater">
+                        <option value="">choose action</option>
+                        <option value="add">+</option>
+                        <option value="sub">-</option>
+                        <option value="divide">/</option>
+                        <option value="multiply">*</option>
+                    </select>
+                </div>
+                <div class="b-item">
+                    <label class="b-item-01" for="number1">Big number:</label>
+                    <input class="b-item-02" type="text" id="number1">
+                    <label class="b-item-01" for="number2">Small number:</label>
+                    <input class="b-item-02" type="text" id="number2" >
+                </div>
+                <div class="d-item">
+                    <button class="d-item-01" onclick="Filter.Acitons.calculate()">Compute</button>
+                </div>
+                <div class="e-item">
+                    Sonuç: <span  id="result"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./calculater.js"></script>
+</body>
+</html>
